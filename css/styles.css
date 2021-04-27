@@ -35,7 +35,7 @@ p {
  line-height: 2;
 }
 a {
-  color: #8a2be2
+  color: #8a2be2;
 
   .;
   font-family: 'Montserrat', sans-serif;
@@ -112,8 +112,8 @@ a:hover {
   background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
   background-image: -o-linear-gradient(top, #11cdd4, #11999e);
   background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   border-radius: 8px;
   font-family: 'Merriweather Sans', sans-serif;
   color: #ffffff;
