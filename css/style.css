@@ -1,0 +1,386 @@
+/* import poppins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/********************************************/
+/* Navigation bar */
+/********************************************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 200ms;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+    color: #111;
+    font-size: 25px;
+}
+
+header ul li a:link,
+header ul li a:visited {
+    color: #fff;
+    transition: all 200ms;
+}
+
+
+header.sticky ul li a:link,
+header.sticky ul li a:visited {
+    color: #111;
+}
+
+header ul li a:hover,
+header ul li a:active {
+    color: #2196f3;
+}
+
+header.sticky ul li a:hover,
+header.sticky ul li a:active {
+    color: #2196f3;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+header ul {
+    position: relative;
+    list-style: none;
+    /*display: flex;*/
+    justify-content: space-between;
+}
+
+header ul li {
+    position: relative;
+    display: inline-block;
+
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    /*font-size: 20px;*/
+    color: #fff;
+    text-decoration: none;
+}
+
+/********************************************/
+/* Home Page */
+/********************************************/
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url("../images/codingmac-min.jpg");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background-color: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/********************************************/
+/* ABOUT ME */
+/********************************************/
+.w50 {
+    width: 50%;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.contentBox h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.contentBox p {
+    padding-right: 30px;
+}
+
+.person img {
+    height: 100%;
+    width: 100%;
+}
+
+/********************************************/
+/* SERVICES */
+/********************************************/
+
+.services {
+    background-color: #111111;
+}
+
+.heading.white {
+    color: #fff;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
+}
+
+.services .content .servicesBox {
+    padding: 40px 20px;
+    background-color: #232323;
+    color: #fff;
+    width: 400px;
+    margin: 40px;
+    text-align: center;
+    transition: 500ms;
+}
+
+.services .content .servicesBox:hover {
+    background-color: #2196f3;
+}
+
+.services .content .servicesBox img {
+    background-color: transparent;
+    width: 80px;
+    filter: invert(1);
+}
+
+.services .content .servicesBox h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work .content .workBox {
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workBox img {
+    width: 100%;
+}
+
+/********************************************/
+/* CONTACT */
+/********************************************/
+
+.contact {
+    background-color: #111;
+
+}
+
+.formBox {
+    width: 60%;
+}
+
+.formBox form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formBox form h3,
+.contactInfoBox h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBox form input,
+.formBox form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBox form textarea {
+    height: 200px;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder {
+    color: #999;
+}
+
+.formBox form input[type=submit] {
+    width: 100px;
+    background-color: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo {
+    width: 40%;
+}
+
+.contactInfoBox {
+    position: relative;
+}
+
+.contactInfoBox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBox .box .icon {
+    width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.contactInfoBox .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBox .box .text h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+/********************************************/
+/* copyright footer */
+/********************************************/
+
+.copyright {
+    background-color: #000;
+    font-weight: 200;
+    color: #494848;
+
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p {
+    letter-spacing: 1px;
+}
+
+/********************************************/
+/* RESPONSIVE */
+/********************************************/
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 40px 60px;
+    }
+    header.sticky {
+        padding: 10px 60px;
+    }
+
+}
+
+@media (max-width: 779px) {
+    .menu {
+        height: 100vh;
+        display: block;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 100px 60px;
+    }
+    .menu li {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+
+
+
+
+
